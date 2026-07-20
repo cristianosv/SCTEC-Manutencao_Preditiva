@@ -1,15 +1,15 @@
 # SCTEC-Manutencao_Preditiva
 Estruturação de pipeline preditivo para monitoramento de falhas mecanicas em uma indústria
 
-##Descrição do Projeto
+## Descrição do Projeto
 Projeto Final do Curso SCTEC - Trilha de Inteligência Artificial - Fundamentos de Dados, Programação e Análise Preditiva com Python.
 Utilizar dados históricos de sensoresinstalados em máquinas em um ambiente industrial, aplicando técnicas de Análise Exploratória de Dados (EDA), perparação de dados, engenharia de tributos, balanceamento de classes e treinamento de modelos de Machine Learning (ML), para prever a ocorrência de falhas mecânicas e evitar paradas da produção.
 Avaliar os algoritmos de ML **K-Nearest Neighbors (KNN)** e **Árvore de Decisão** com a base de dados disponível e verificar qual dos modelos terá melhor desempenho nos conjuntos de teste.
 
-##Objetivo Geral
+## Objetivo Geral
 Desenvolver pipeline completo de ML que possa prever falhas em equipamentos industriais através de dados históricos capturados por sensores instalados nas máquinas do ambiente industrial.
 
-##Objetivos Específicos
+## Objetivos Específicos
 - Realizar Análise Exploratória de Dados (EDA);
 - Identificar e tratar valores ausentes e/ou duplicados;
 - Avaliar se há outliers (valores atípicos) nas variáveis estudadas;
@@ -20,4 +20,10 @@ Desenvolver pipeline completo de ML que possa prever falhas em equipamentos indu
 - Comparar o desempenho dos modelos através de métrics de avaliação;
 - Selecionar o modelo mais adequado para utilização em um cenário de manutenção preditiva.
 
+## Dataset
+O conjunto de dados disponível simula um ambiente de **manutenção preditiva**, utilizando sensores que medem características operacionais de equipamentos industriais, senod constituído de **10.000 registros e 14 variáveis originais**, com informações de temperatura, torque, velocidade de rotação, desgaste da ferramenta, tipo de equipamento e indicadores de falhas.
+A variável alvo deste projeto e:
+- **0:** Equipamento em operação (sem falha);
+- **1:** Equipamento com falha.
+Na etapa de **Engenharia de Atributos (Feature Engineering)**, uma nova variável **potencia** foi criada a partir do produto entre velocidade de rotação (RPM) e torque (Nm) como forma de acrescentar uma nova característica da operação e auxiliar no treinamento dos modelos de Machine Learning.
 
