@@ -40,3 +40,73 @@ Foram utilizadas as seguintes linguagens, bliboiotecas e ferramentas:
 - Git
 - GitHub
 
+## Pipeline de Ciência de Dados
+Todas as etapas necessárias para o desenvolvimento de um modelo de manutenção preditiva baseado em Machine Learning foram desenvolvidas conforme o pipeline estruturado de Ciência de Dados:
+```text
+Leitura da Base de Dados
+          │
+          ▼
+Análise Exploratória dos Dados (EDA)
+          │
+          ▼
+Limpeza e Tratamento dos Dados
+          │
+          ▼
+Engenharia de Atributos
+          │
+          ▼
+Divisão em Treino e Teste
+          │
+          ▼
+Balanceamento das Classes (SMOTE)
+          │
+          ▼
+Escalonamento das Variáveis (KNN)
+          │
+          ▼
+Treinamento dos Modelos
+(KNN e Árvore de Decisão)
+          │
+          ▼
+Ajuste de Hiperparâmetros
+          │
+          ▼
+Comparação dos Modelos
+          │
+          ▼
+Avaliação do Modelo Final
+(Matriz de Confusão e Classification Report)
+          │
+          ▼
+Conclusão
+```
+
+## Estrutura do Repositório
+```text
+📦 Projeto
+│
+├── 📁 data/
+│   └── predictive_maintenance.csv
+│
+├── 📄 notebook.ipynb
+├── 📄 README.md
+├── 📄 requirements.txt
+│
+└── 📁 imagens/
+```
+
+## Metodologia
+O modelo foi desenvolvido conforme as etapas:
+1. Análise exploratória dos dados para compreensão da distribuição das variáveis e identificação de padrões.
+2. Tratamento de valores ausentes pela média, definida pela distribuição das variáveis.
+3. Busca de registros duplicados.
+4. Identificação e análise de outliers por meio de análise gráfica (boxplots).
+5. Engenharia de atributos com a criação da variável **potencia**.
+6. Transformação da variável categórica utilizando One-Hot Encoding.
+7. Separação dos dados em treino (80%) e teste (20%) utilizando estratificação da variável alvo conforme documentação da engenharia.
+8. Balanceamento das classes via SMOTE exclusivamente ao conjunto de treinamento.
+9. Padronização das variáveis contínuas para o modelo KNN utilizando StandardScaler.
+10. Treinamento e ajuste dos modelos KNN e Árvore de Decisão.
+11. Comparação dos modelos e definição da melhor solução.
+12. Avaliação final utilizando Matriz de Confusão e Classification Report.
+
