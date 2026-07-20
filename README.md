@@ -27,3 +27,16 @@ A variável alvo deste projeto e:
 - **1:** Equipamento com falha.
 Na etapa de **Engenharia de Atributos (Feature Engineering)**, uma nova variável **potencia** foi criada a partir do produto entre velocidade de rotação (RPM) e torque (Nm) como forma de acrescentar uma nova característica da operação e auxiliar no treinamento dos modelos de Machine Learning.
 
+## Tecnologias Utilizadas
+Foram utilizadas as seguintes linguagens, bliboiotecas e ferramentas:
+- Python 3
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Imbalanced-Learn (SMOTE)
+- Jupyter Notebook
+- Git
+- GitHub
+
